@@ -1,0 +1,5 @@
+.slide-three__arrow_small_right {
+  transform: rotate(90deg) scale(0.45);
+  top: 210px;
+  left: 600px;
+}

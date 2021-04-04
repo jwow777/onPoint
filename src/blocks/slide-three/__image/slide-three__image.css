@@ -1,0 +1,7 @@
+.slide-three__image {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  z-index: 1;
+}

@@ -1,0 +1,17 @@
+.slide-three__arrow_small_bottom:nth-child(15) {
+  transform: rotate(180deg) scale(0.45);
+  top: 295px;
+  left: 235px;
+}
+
+.slide-three__arrow_small_bottom:nth-child(16) {
+  transform: rotate(180deg) scale(0.45);
+  top: 295px;
+  left: 380px;
+}
+
+.slide-three__arrow_small_bottom:nth-child(17) {
+  transform: rotate(180deg) scale(0.45);
+  top: 295px;
+  left: 525px;
+}

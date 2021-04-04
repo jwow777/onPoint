@@ -1,0 +1,17 @@
+.slide-three__ice_one:nth-child(3) {
+  top: 93px;
+  left: 892px;
+  opacity: 0.4;
+}
+
+.slide-three__ice_one:nth-child(4) {
+  top: 177px;
+  left: 612px;
+  opacity: 0.4;
+}
+
+.slide-three__ice_one:nth-child(5) {
+  top: 454px;
+  left: -87px;
+  opacity: 0.6;
+}

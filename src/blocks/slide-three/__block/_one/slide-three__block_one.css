@@ -1,0 +1,7 @@
+.slide-three__block_one {
+  height: 90px;
+  grid-column: 2;
+  grid-row: 2;
+  align-self: end;
+  font-size: 22px;
+}

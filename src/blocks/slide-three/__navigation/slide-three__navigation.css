@@ -1,0 +1,42 @@
+.slide-three__navigation {
+  position: absolute;
+  left: 195px;
+  top: 96.6%;
+  width: 640px;
+  height: 13px;
+  appearance: none;     
+  background-color: rgba(209, 234, 255, 0.4);
+  outline: none;
+}
+
+.slide-three__navigation::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 45px;
+  height: 53px;
+  cursor: pointer;
+  background-image: url(../../../images/ice-nav.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-three__navigation::-webkit-slider-runnable-track {
+  height: 53px;
+}
+
+.slide-three__navigation::-webkit-slider-runnable-track::after {
+	content: '';
+  background-color: #d1eaff;
+  height: 60px;
+  width: 60px;
+}
+
+
+.slide-three__navigation::-webkit-progress-bar {
+  -webkit-appearance: none;
+  background-color: orange;
+}
+
+.slide-three__navigation::-webkit-progress-value {
+  -webkit-appearance: none;
+  background-color: #d1eaff;
+}

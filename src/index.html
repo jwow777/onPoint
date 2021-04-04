@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Тест для Onpoint</title>
+  </head>
+  <body class="page">
+    <nav class="menu">
+      <ul class="menu__items">
+        <li class="menu__item">
+          <a href="#element1" class="menu__link"></a>
+        </li>
+        <li class="menu__item">
+          <a href="#element2" class="menu__link"></a>
+        </li>
+        <li class="menu__item">
+          <a href="#element3" class="menu__link"></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="content">
+      <section class="slide-one" id="element1">
+        <h1 class="title slide-one__title">
+          Всегда ли цели терапии СД2 на поверхности?
+        </h1>
+        <p class="slide-one__item slide-one__item_top">Цель по HbA1c</p>
+        <p class="slide-one__item slide-one__item_left">Гипогликемия</p>
+        <p class="slide-one__item slide-one__item_right">СС риски</p>
+        <p class="slide-one__item slide-one__item_bottom">Осложнения СД</p>
+        <div class="slide-one__image slide-one__image_top">
+          <img src="<%=require('./images/ellipse_top.png')%>" alt="круг" class="slide-one__curcle"/>
+          <span class="slide-one__pulse slide-one__pulse_top"></span>
+        </div>
+        <div class="slide-one__image slide-one__image_left">
+          <img src="<%=require('./images/ellipse_left.png')%>" alt="круг" class="slide-one__curcle"/>
+          <span class="slide-one__pulse slide-one__pulse_left"></span>
+        </div>
+        <div class="slide-one__image slide-one__image_right">
+          <img src="<%=require('./images/ellipse_right.png')%>" alt="круг" class="slide-one__curcle"/>
+          <span class="slide-one__pulse slide-one__pulse_right"></span>
+        </div>
+        <div class="slide-one__image slide-one__image_bottom">
+          <img src="<%=require('./images/ellipse_bottom.png')%>" alt="круг" class="slide-one__curcle"/>
+          <span class="slide-one__pulse slide-one__pulse_bottom"></span>
+        </div>
+      </section>
+      <section class="slide-two" id="element2">
+        <h2 class="title slide-two__title">Основа терапии — патогенез СД2</h2>
+        <img src="<%=require('./images/ice_top_left.png')%>" alt="Лед" class="slide-two__ice slide-two__ice_top-left"/>
+        <img src="<%=require('./images/ice_top_right.png')%>" alt="Лед" class="slide-two__ice slide-two__ice_top-right"/>
+        <img src="<%=require('./images/ice_bottom_left.png')%>" alt="Лед" class="slide-two__ice slide-two__ice_bottom-left"/>
+        <img src="<%=require('./images/ice_bottom_right.png')%>" alt="Лед" class="slide-two__ice slide-two__ice_bottom-right"/>
+      </section>
+      <div class="slide-three__wrapper">
+        <section class="slide-three">
+          <h2 class="title slide-three__title">Звенья патогенеза СД2</h2>
+          <div class="slide-three__container slide-three__container_one">
+            <div class="slide-three__element slide-three__element_center slide-three__element_one">
+              <span class="slide-three__number">1</span>
+              <p class="slide-three__name">β-клетки</p>
+              <div class="slide-three__image-box slide-three__image-box_large">
+                <img src="<%=require('./images/ellipse.png')%>" class="slide-three__ellipse slide-three__ellipse_large" alt="круг">
+                <p class="slide-three__beta">β</p>
+              </div>
+            </div>
+            <div class="slide-three__element slide-three__element_center slide-three__element_one">
+              <span class="slide-three__number">2</span>
+              <p class="slide-three__name">Мышцы</p>   
+              <div class="slide-three__image-box slide-three__image-box_large">
+                <img src="<%=require('./images/ellipse.png')%>" class="slide-three__ellipse slide-three__ellipse_large" alt="круг">
+                <img src="<%=require('./images/muscle.png')%>" alt="Мышцы" class="slide-three__image">
+              </div>           
+            </div>
+            <div class="slide-three__element slide-three__element_center slide-three__element_one">
+              <span class="slide-three__number">3</span>
+              <p class="slide-three__name">Печень</p>       
+              <div class="slide-three__image-box slide-three__image-box_large">
+                <img src="<%=require('./images/ellipse.png')%>" class="slide-three__ellipse slide-three__ellipse_large" alt="круг">
+                <img src="<%=require('./images/liver.png')%>" alt="Печень" class="slide-three__image">
+              </div>       
+            </div>
+            <div class="slide-three__block slide-three__block_one">
+              <p>Гипергликемия</p>
+            </div>  
+            <img src="<%=require('./images/arrow-three-slide-long.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_large slide-three__arrow_large_left">
+            <img src="<%=require('./images/arrow-three-slide-long.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_large slide-three__arrow_large_right">
+            <img src="<%=require('./images/arrow-three-slide-short.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_short slide-three__arrow_short_top">
+            <img src="<%=require('./images/arrow-three-slide-short.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_short slide-three__arrow_short_left">
+            <img src="<%=require('./images/arrow-three-slide-short.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_short slide-three__arrow_short_right">
+          </div>
+          <img src="<%=require('./images/ice_three_one_small.png')%>" alt="Лед" class="slide-three__ice slide-three__ice_one">
+          <img src="<%=require('./images/ice_three_one_middle.png')%>" alt="Лед" class="slide-three__ice slide-three__ice_one">
+          <img src="<%=require('./images/ice_three_one_large.png')%>" alt="Лед" class="slide-three__ice slide-three__ice_one">
+        </section>
+        <section class="slide-three">
+          <h2 class="title slide-three__title">Смертельный октет</h2>
+          <div class="slide-three__container slide-three__container_two">
+            <div class="slide-three__element slide-three__element_center slide-three__element_two">
+              <span class="slide-three__number">1</span>
+              <p class="slide-three__name">β-клетки</p>
+              <div class="slide-three__image-box slide-three__image-box_small">
+                <img src="<%=require('./images/ellipse.png')%>" class="slide-three__ellipse slide-three__ellipse_small" alt="круг">
+                <p class="slide-three__beta">β</p>
+              </div>
+            </div>
+            <div class="slide-three__element slide-three__element_center slide-three__element_two">
+              <p class="slide-three__name slide-three__name_short">Инкретиновый эффект</p>
+              <div class="slide-three__image-box slide-three__image-box_small">
+                <img class="slide-three__ellipse slide-three__ellipse_small" src="<%=require('./images/ellipse.png')%>" alt="эллипс"/>
+                <span class="slide-three__number">2</span>
+              </div>
+            </div>
+            <div class="slide-three__element slide-three__element_center slide-three__element_two">
+              <p class="slide-three__name slide-three__name_short">Дефект α&#8209;клеток</p>
+              <div class="slide-three__image-box slide-three__image-box_small">
+                <img class="slide-three__ellipse slide-three__ellipse_small" src="<%=require('./images/ellipse.png')%>" alt="эллипс"/>
+                <span class="slide-three__number">3</span>
+              </div>
+            </div>
+            <div class="slide-three__element slide-three__element_center slide-three__element_two">
+              <div class="slide-three__image-box slide-three__image-box_small slide-three__image-box_right">
+                <img class="slide-three__ellipse slide-three__ellipse_small" src="<%=require('./images/ellipse.png')%>" alt="эллипс"/>
+                <img class="slide-three__image slide-three__image_small" src="<%=require('./images/lipid.png')%>" alt="Жировые клетки"/>
+              </div>
+              <span class="slide-three__number">4</span>
+              <p class="slide-three__name slide-three__name_short">Жировые клетки</p>
+            </div>
+            <div class="slide-three__element slide-three__element_center slide-three__element_two">
+              <div class="slide-three__image-box slide-three__image-box_small">
+                <img class="slide-three__ellipse slide-three__ellipse_small" src="<%=require('./images/ellipse.png')%>" alt="эллипс"/>
+                <img class="slide-three__image slide-three__image_small" src="<%=require('./images/muscle.png')%>" alt="Мышцы"/>
+              </div>
+              <span class="slide-three__number">5</span>
+              <p class="slide-three__name">Мышцы</p>
+            </div>
+            <div class="slide-three__element slide-three__element_center slide-three__element_two">
+              <div class="slide-three__image-box slide-three__image-box_small">
+                <img class="slide-three__ellipse slide-three__ellipse_small" src="<%=require('./images/ellipse.png')%>" alt="эллипс"/>
+                <img class="slide-three__image slide-three__image_small" src="<%=require('./images/liver.png')%>" alt="Печень"/>
+              </div>
+              <span class="slide-three__number">6</span>
+              <p class="slide-three__name">Печень</p>
+            </div>
+            <div class="slide-three__element slide-three__element_center slide-three__element_two">
+              <div class="slide-three__image-box slide-three__image-box_small">
+                <img class="slide-three__ellipse slide-three__ellipse_small" src="<%=require('./images/ellipse.png')%>" alt="эллипс"/>
+                <img class="slide-three__image slide-three__image_small" src="<%=require('./images/brain.png')%>" alt="Головной мозг"/>
+              </div>
+              <span class="slide-three__number">7</span>
+              <p class="slide-three__name">Головной мозг</p>
+            </div>
+            <div class="slide-three__element slide-three__element_center slide-three__element_two">
+              <div class="slide-three__image-box slide-three__image-box_small slide-three__image-box_left">
+                <img class="slide-three__ellipse slide-three__ellipse_small" src="<%=require('./images/ellipse.png')%>" alt="эллипс"/>
+                <img class="slide-three__image slide-three__image_small" src="<%=require('./images/kidney.png')%>" alt="Почки" />
+              </div>
+              <span class="slide-three__number">8</span>
+              <p class="slide-three__name">Почки</p>
+            </div>
+            <div class="slide-three__block slide-three__block_two">
+              <p>Гипергликемия</p>
+            </div>
+            <img src="<%=require('./images/arrow-three-slide-small.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_small slide-three__arrow_small_top">
+            <img src="<%=require('./images/arrow-three-slide-small.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_small slide-three__arrow_small_top">
+            <img src="<%=require('./images/arrow-three-slide-small.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_small slide-three__arrow_small_top">
+            <img src="<%=require('./images/arrow-three-slide-small.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_small slide-three__arrow_small_left">
+            <img src="<%=require('./images/arrow-three-slide-small.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_small slide-three__arrow_small_right">
+            <img src="<%=require('./images/arrow-three-slide-small.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_small slide-three__arrow_small_bottom">
+            <img src="<%=require('./images/arrow-three-slide-small.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_small slide-three__arrow_small_bottom">
+            <img src="<%=require('./images/arrow-three-slide-small.png')%>" alt="стрелка" class="slide-three__arrow slide-three__arrow_small slide-three__arrow_small_bottom">
+          </div>
+          <img src="<%=require('./images/ice_three_one_small.png')%>" alt="Лед" class="slide-three__ice slide-three__ice_two">
+          <img src="<%=require('./images/ice_three_one_middle.png')%>" alt="Лед" class="slide-three__ice slide-three__ice_two">
+          <img src="<%=require('./images/ice_three_one_large.png')%>" alt="Лед" class="slide-three__ice slide-three__ice_two">
+        </section>
+        <section class="slide-three" id="element3">
+          <h2 class="title slide-three__title">Звенья патогенеза СД2</h2>
+          <img src="<%=require('./images/ice_three_one_small.png')%>" alt="Лед" class="slide-three__ice slide-three__ice_three">
+          <img src="<%=require('./images/ice_three_one_middle.png')%>" alt="Лед" class="slide-three__ice slide-three__ice_three">
+          <img src="<%=require('./images/ice_three_one_large.png')%>" alt="Лед" class="slide-three__ice slide-three__ice_three">
+        </section>
+        <input type="range" class="slide-three__navigation" min="1" max="100" step="1" value="100">
+      </div>
+      <div class="footer">
+        <span class="footer__down">Листайте вниз</span>
+        <img src="<%=require('./images/arrow.png')%>" alt="Вниз" class="footer__arrow" />
+        <img src="<%=require('./images/rectangle1.png')%>" alt="эллипс" class="footer__rectangle" />
+        <img src="<%=require('./images/rectangle1.png')%>" alt="эллипс" class="footer__rectangle" />
+      </div>
+    </main>
+  </body>
+</html>

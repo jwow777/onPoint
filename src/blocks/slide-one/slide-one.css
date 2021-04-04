@@ -1,0 +1,6 @@
+.slide-one {
+  min-height: 768px;
+  background: url(../../images/bg1.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}

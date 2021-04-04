@@ -1,0 +1,14 @@
+.slide-three__arrow_small_top:nth-child(10) {
+  top: 120px;
+  left: 235px;
+}
+
+.slide-three__arrow_small_top:nth-child(11) {
+  top: 120px;
+  left: 380px;
+}
+
+.slide-three__arrow_small_top:nth-child(12) {
+  top: 120px;
+  left: 525px;
+}
