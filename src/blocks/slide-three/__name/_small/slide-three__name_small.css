@@ -1,0 +1,7 @@
+.slide-three__name_small {
+  font-size: 15px;
+}
+
+.slide-three__name_small:nth-child(3) {
+  margin-top: 25px;
+}

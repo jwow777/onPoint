@@ -1,16 +1,16 @@
-.slide-three__ice_three:nth-child(2) {
+.slide-three__ice_three:nth-child(3) {
   top: 90px;
   left: -24px;
   opacity: 0.4;
 }
 
-.slide-three__ice_three:nth-child(3) {
+.slide-three__ice_three:nth-child(4) {
   top: 162px;
   left: 883px;
   opacity: 0.4;
 }
 
-.slide-three__ice_three:nth-child(4) {
+.slide-three__ice_three:nth-child(5) {
   top: 483px;
   left: 34px;
   transform: rotate(333deg) scale(0.5);

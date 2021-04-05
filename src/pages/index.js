@@ -5,10 +5,9 @@ const buttonMenuTwo = document.querySelectorAll('.menu__link')[1];
 const buttonMenuThree = document.querySelectorAll('.menu__link')[2];
 
 const slideContainer = document.querySelector(".slide-three__wrapper");
-const horizontalScroll = document.querySelector('.slide-three__navigation');
+const horizontalScroll = document.querySelector('.slide-three__range');
 
 const footer = document.querySelector('.footer');
-const footerActive = document.querySelector('.footer_active');
 
 const iceCubeTopLeft = document.querySelector('.slide-two__ice_top-left');
 const iceCubeTopRight = document.querySelector('.slide-two__ice_top-right');
@@ -56,17 +55,6 @@ function scrollDownInfo() {
   window.scrollY < 850 ? footer.classList.add('footer_active') : footer.classList.remove('footer_active');
 }
 
-// Слежение за позицией слайда
-function checkPosition(inputRange) {
-  if (slideContainer.scrollLeft < 512) {
-    setTimeout(() => inputRange.value = 1, 50);
-  } else if (slideContainer.scrollLeft > 1536) {
-    setTimeout(() => inputRange.value = 100, 50);
-  } else {
-    setTimeout(() => inputRange.value = 50, 50);
-  }
-}
-
 // Связь инпута и скролла по горизонтали
 function onChangeInput(inputRange) {
   if (inputRange.value < 25) {
@@ -99,7 +87,6 @@ function parallaxScroll(){
 }
 
 horizontalScroll.addEventListener('change', () => onChangeInput(horizontalScroll));
-slideContainer.addEventListener('scroll', () => checkPosition(horizontalScroll));
 window.addEventListener('scroll', scrollDownInfo);
 window.addEventListener('scroll', parallaxScroll);
 window.addEventListener('scroll', () => activeButtonMenu(window.scrollY));

@@ -1,0 +1,5 @@
+.slide-three__elements_middle {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 60px;
+}
