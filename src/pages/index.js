@@ -4,7 +4,7 @@ const buttonMenuOne = document.querySelectorAll('.menu__link')[0];
 const buttonMenuTwo = document.querySelectorAll('.menu__link')[1];
 const buttonMenuThree = document.querySelectorAll('.menu__link')[2];
 
-const slideContainer = document.querySelector(".slide-three__wrapper");
+const slideContainer = document.querySelector(".slide-three");
 const horizontalScroll = document.querySelector('.slide-three__range');
 
 const footer = document.querySelector('.footer');
@@ -69,6 +69,17 @@ function onChangeInput(inputRange) {
   }
 }
 
+// Слежение за позицией слайда
+function checkPosition(inputRange) {
+  if (slideContainer.scrollLeft < 512) {
+    inputRange.value = 1;
+  } else if (slideContainer.scrollLeft > 1536) {
+    inputRange.value = 100;
+  } else {
+    inputRange.value = 50;
+  }
+}
+
 // Parallax
 function parallaxScroll(){
   if (window.scrollY < 1450) {
@@ -87,6 +98,7 @@ function parallaxScroll(){
 }
 
 horizontalScroll.addEventListener('change', () => onChangeInput(horizontalScroll));
+slideContainer.addEventListener('scroll', () => checkPosition(horizontalScroll));
 window.addEventListener('scroll', scrollDownInfo);
 window.addEventListener('scroll', parallaxScroll);
 window.addEventListener('scroll', () => activeButtonMenu(window.scrollY));

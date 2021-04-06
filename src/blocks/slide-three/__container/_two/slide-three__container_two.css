@@ -1,8 +1,0 @@
-.slide-three__container_two {
-  grid-template-columns: 125px 100px 100px 100px 125px;
-  gap: 25px 45px;
-  margin: 0 auto;
-  width: max-content;
-  padding-left: 20px;
-  padding-top: 10px;
-}

@@ -1,7 +1,0 @@
-.slide-one__pulse_right::after,
-.slide-one__pulse_right::before {
-  top: -1.5px;
-  left: -1.5px;
-  right: -1.5px;
-  bottom: -1.5px;
-}
