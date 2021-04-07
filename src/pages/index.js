@@ -21,10 +21,7 @@ for (let link of links) {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const id = link.getAttribute("href");
-    document.querySelector(id).scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
+    document.querySelector(id).scrollIntoView({behavior: "smooth", block: "start"});
   });
 }
 
@@ -97,6 +94,50 @@ function parallaxScroll(){
   }
 }
 
+// Swipe Up/Down
+function scrollDown(yPage) {
+  if (yPage < 768) {
+    return window.scroll({top: 768, behavior: 'smooth'});
+  } else if (yPage < 1536) {
+    return window.scroll({top: 1536, behavior: 'smooth'});
+  } else {
+    return 
+  }
+}
+
+function scrollUp(yPage) {
+  if (yPage > 1536) {
+    return window.scroll({top: 768, behavior: 'smooth'});
+  } else if (yPage > 768) {
+    return window.scroll({top: 0, behavior: 'smooth'});
+  } else {
+    return 
+  }
+}
+
+
+let yDown = null;
+ 
+function handleTouchStart(evt) {
+  const firstTouch = evt.touches[0];
+  yDown = firstTouch.clientY;
+};
+ 
+function handleTouchMove(evt) {
+  if (!yDown) {
+    return;
+  }            
+  const yPage = evt.touches[0].pageY;        
+  const yUp = evt.touches[0].clientY;
+  const yDiff = yDown - yUp;
+
+  yDiff > 0 ? scrollDown(yPage) : scrollUp(yPage)                                                             
+
+  yDown = null;                                             
+};
+
+window.addEventListener('touchstart', handleTouchStart, false);
+window.addEventListener('touchmove', handleTouchMove, false);
 horizontalScroll.addEventListener('change', () => onChangeInput(horizontalScroll));
 slideContainer.addEventListener('scroll', () => checkPosition(horizontalScroll));
 window.addEventListener('scroll', scrollDownInfo);
