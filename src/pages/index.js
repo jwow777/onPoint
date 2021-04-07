@@ -26,12 +26,12 @@ for (let link of links) {
 }
 
 // Активация кнопки меню
-function activeButtonMenu(scroll) {
-  if (scroll < 400) {
+function activeButtonMenu(position) {
+  if (position < 400) {
     buttonMenuOne.classList.add('menu__link_active');
     buttonMenuTwo.classList.remove('menu__link_active');
     buttonMenuThree.classList.remove('menu__link_active');
-  } else if (scroll > 1200) {
+  } else if (position > 1200) {
     buttonMenuOne.classList.remove('menu__link_active');
     buttonMenuTwo.classList.remove('menu__link_active');
     buttonMenuThree.classList.add('menu__link_active');
@@ -96,19 +96,20 @@ function parallaxScroll(){
 
 // Swipe Up/Down
 function scrollDown(yPage) {
-  if (yPage < 768) {
-    return window.scroll({top: 768, behavior: 'smooth'});
-  } else if (yPage < 1536) {
-    return window.scroll({top: 1536, behavior: 'smooth'});
+  if (yPage < 769) {
+    return window.scroll({top: 769, behavior: 'smooth'});
+  } else if (yPage > 768 && yPage < 1537) {
+    return window.scroll({top: 1537, behavior: 'smooth'});
   } else {
     return 
   }
 }
 
 function scrollUp(yPage) {
-  if (yPage > 1536) {
-    return window.scroll({top: 768, behavior: 'smooth'});
-  } else if (yPage > 768) {
+  if (yPage > 1536 && yPage < 2100) {
+    return window.scroll({top: 769, behavior: 'smooth'});
+  } else 
+  if (yPage > 768 && yPage < 1537) {
     return window.scroll({top: 0, behavior: 'smooth'});
   } else {
     return 

@@ -43,11 +43,7 @@
   text-indent: -9999px;
   background: transparent url(../images/ellipse_menu_default.png) no-repeat;
   background-size: contain;
-}
-
-.menu__link:hover {
-  background: transparent url(../images/ellipse_menu_active.png) no-repeat;
-  background-size: contain;
+  transition: all .5s ease;
 }
 
 .menu__link_active {
